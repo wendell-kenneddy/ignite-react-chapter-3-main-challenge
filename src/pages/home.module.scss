@@ -10,6 +10,10 @@
 .mainContent {
   max-width: 720px;
   margin: 0 auto;
+
+  aside {
+    margin-top: 5rem; // 80px
+  }
 }
 
 .posts {

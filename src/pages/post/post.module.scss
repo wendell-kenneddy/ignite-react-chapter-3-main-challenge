@@ -8,6 +8,12 @@
   }
 }
 
+.mainContent {
+  aside {
+    margin-top: 5rem; //80px
+  }
+}
+
 .heroImage {
   margin-bottom: 5rem;
   width: 1440px;
@@ -32,6 +38,7 @@
     }
 
     > div {
+      margin-bottom: 1rem; // 16px
       display: flex;
       align-items: center;
       gap: 1.5rem; // 24px
@@ -43,6 +50,11 @@
       align-items: center;
       gap: 0.5rem; // 8px
       font-size: 0.875rem; // 14px
+      color: var(--info);
+    }
+
+    span:last-child {
+      font-style: italic;
     }
   }
 
@@ -73,5 +85,37 @@
     margin-bottom: 1.5rem; // 24px
     text-align: justify;
     font-size: 1.125rem; // 18px
+  }
+}
+
+.nextAndPrevioustPost {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 3.75rem; // 60px
+  margin-bottom: 5rem; // 80px
+  padding-top: 3rem; // 48px
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem; // 8px
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: var(--highlight);
+
+    span {
+      font-size: 1.125rem; // 18px
+      color: var(--heading);
+      font-weight: 400;
+    }
+
+    &:nth-child(2) {
+      align-items: flex-end;
+    }
   }
 }
